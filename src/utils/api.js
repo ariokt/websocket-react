@@ -1,5 +1,5 @@
-// const URL = 'http://34.132.193.158';
-const URL = 'http://localhost:8000';
+const URL = 'http://34.132.193.158';
+// const URL = 'http://localhost:8000';
 
 export const apiLogin = async (username, password) => {
   const res = await fetch(`${URL}/auth/login`, {
