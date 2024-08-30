@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { CiPaperplane } from "react-icons/ci";
 import io from 'socket.io-client';
 
-let socket = io('http://localhost:8000', {
+let socket = io('http://34.132.193.158', {
   autoConnect: false
 });
 

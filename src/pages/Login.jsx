@@ -26,8 +26,9 @@ function Login() {
     try {
       const response = await apiLogin(username, password);
       if (response.status === 200) {
-        sessionStorage.setItem('userToken', response.data.accessToken);
-        sessionStorage.setItem('dataUser', JSON.stringify(response.data.dataUser));
+        console.log(response.data)
+        sessionStorage.setItem('userToken', response.data.data.accessToken);
+        sessionStorage.setItem('dataUser', JSON.stringify(response.data.data.dataUser));
         navigate('/chat');
       }
     } catch (error) {
